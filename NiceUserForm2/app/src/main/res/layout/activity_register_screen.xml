@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterScreen"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textSize="35sp"
+            android:fontFamily="@font/montserratsemibolditalic"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userNameEditText"
+            android:layout_width="380dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_height="wrap_content"
+                android:layout_width="380dp"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserratbold"
+                android:hint="@string/username"
+                android:background="#50ffffff"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordEditText"
+            android:layout_width="380dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="@string/password"
+                android:layout_height="wrap_content"
+                android:layout_width="380dp"
+                android:inputType="textPassword"
+                android:fontFamily="@font/montserratbold"
+                android:background="#50ffffff"
+                android:textSize="20sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/repeatPasswordEditText"
+            android:layout_width="380dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="@string/repeat_password"
+                android:layout_height="wrap_content"
+                android:layout_width="380dp"
+                android:inputType="textPassword"
+                android:fontFamily="@font/montserratbold"
+                android:background="#50ffffff"
+                android:textSize="20sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailEditText"
+            android:layout_width="380dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            app:errorEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="@string/email"
+                android:layout_height="wrap_content"
+                android:layout_width="380dp"
+                android:inputType="textPassword"
+                android:fontFamily="@font/montserratbold"
+                android:background="#50ffffff"
+                android:textSize="20sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NameEditText"
+        android:layout_width="380dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="@string/name"
+            android:layout_height="wrap_content"
+            android:layout_width="380dp"
+            android:inputType="textPassword"
+            android:fontFamily="@font/montserratbold"
+            android:background="#50ffffff"
+            android:textSize="20sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/SurnamesEditText"
+            android:layout_width="380dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="@string/surnames"
+                android:layout_height="wrap_content"
+                android:layout_width="380dp"
+                android:inputType="textPassword"
+                android:fontFamily="@font/montserratbold"
+                android:background="#50ffffff"
+                android:textSize="20sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/birthdateDatePicker"
+            android:layout_width="380dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="@string/birthdate"
+                android:layout_height="wrap_content"
+                android:layout_width="380dp"
+                android:inputType="textPassword"
+                android:fontFamily="@font/montserratbold"
+                android:background="#50ffffff"
+                android:textSize="20sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/genderDropdown"
+            android:layout_width="380dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="@string/gender"
+                android:layout_height="wrap_content"
+                android:layout_width="380dp"
+                android:inputType="textPassword"
+                android:fontFamily="@font/montserratbold"
+                android:background="#50ffffff"
+                android:textSize="20sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginButton"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="@string/login"
+            android:fontFamily="@font/montserratbold"
+            android:textColor="#ffffff"
+            android:backgroundTint="#000000"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/registerButton"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Register"
+            android:fontFamily="@font/montserratbold"
+            android:textColor="#ffffff"
+            android:backgroundTint="#40ffffff"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+    </LinearLayout>
+</ScrollView>
